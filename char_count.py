@@ -1,6 +1,7 @@
 #!/bin/python3
 
 import sys
+from pprint import pprint
 
 try:
     user_input = sys.argv[1]
@@ -13,4 +14,4 @@ for text in user_input:
     result.setdefault(text, 0)
     result[text] = result[text] + 1
     
-print(result)
+pprint(result)
